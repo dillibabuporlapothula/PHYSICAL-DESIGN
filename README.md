@@ -94,6 +94,26 @@ OpenLane is an automated RTL to GDSII flow based on several components including
 
 ![Screenshot (132)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/6bf9d98e-1937-4048-8831-b415a79930c7)
 
+#### Steps to run OpenLane tool
+
+Commands used are
+
+```
+cd /OpenLane
+make mount
+package require openlane 0.9
+./flow.tcl -design spm 
+```
+
+The above commands will prepare the design for running.
+
+``` run_synthesis``` - this command will run the synthesis and below is the synthesis report
+
+![VirtualBox_ubuntu-VLSI_17_09_2023_23_42_52](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/f0ea6293-f73a-4497-a28a-97343d2f6d34)
+
+From the report we can calculate __flops ratio__ = 64/301 = 0.212 = 21.2 % 
+ 
+
 </details>
 
 <details>
