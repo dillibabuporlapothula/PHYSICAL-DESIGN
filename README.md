@@ -59,6 +59,30 @@ Below block diagram explains about software to hardflow flow more deeply involvi
 
 ![Screenshot (114)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/754b5258-8687-41b3-bbdb-829b869b8fb6)
 
+### SOC design using OpenLane
+
+__PDK__ : process design kit - These are interface between designers and FABs.
+- Files used to model fabrication process includes design rules , device information etc.These are sensitive information and kept secret.
+-  Skywater 130nm is the opensource PDK that is available.
+
+  
+  ![Screenshot (119)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/e68f74c7-eb85-4413-a359-eb4da79090a1)
+
+### RTL to GSD flow
+
+The simplified RTL to GDS flow is as follows
+
+![Screenshot (120)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/4a37aec3-552a-4fad-a838-8524b7ef4b96)
+
+__synthesis:__  In this step RTL code is converted to Gate level netlist
+__Floor and power planning:__ Plan silicon area,partition the chip between different blocks, place I/O ports and create robust power distribution network.
+__placement:__ The gate level netlist cells are placed on the above planned floor in rows and columns.
+__clock tree synthesis:__ Clock distribution network is created to distribute clock to all sequential elements with minimum possible skew.
+__routing:__ also know as signal routing . Interconnect all the cells using availble metal layers.
+__signoff:__ We can construct final layout and perform verifications like DRC , LVS , STA.
+
+
+
 </details>
 
 <details>
