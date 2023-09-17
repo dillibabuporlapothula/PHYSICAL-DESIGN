@@ -81,7 +81,18 @@ __clock tree synthesis:__ Clock distribution network is created to distribute cl
 __routing:__ also know as signal routing . Interconnect all the cells using availble metal layers.
 __signoff:__ We can construct final layout and perform verifications like DRC , LVS , STA.
 
+### Intro to OpenLane 
 
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. The flow performs all ASIC implementation steps from RTL all the way down to GDSII.
+- Strive is opensource SOC available from OpenLane.
+- The OpenLane can be used for both Macros and Chips.
+- We have two modes in OpenLane i) Autonomous ii) Interactive
+- We also have options to synthesis exploration , design exploration.
+
+
+![Screenshot (131)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/64c0ded2-2c79-42b4-a242-9460135ca312)
+
+![Screenshot (132)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/6bf9d98e-1937-4048-8831-b415a79930c7)
 
 </details>
 
