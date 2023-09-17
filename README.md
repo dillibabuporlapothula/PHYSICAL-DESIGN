@@ -26,7 +26,9 @@ and to run RTL2GDS flow used below command
 
 <details>
 <summary>Day 1 </summary>
+ 
  A package (commonly called chip) contains various blocks like IP's, SOC and other things as explained below.
+
  
  ![Screenshot (108)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/e0348bfd-90d1-4e6f-812e-2f11a6c7307a)
 
