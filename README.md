@@ -147,6 +147,12 @@ To identify the dimensions of chip like width,height,die,core we need to first f
   
    ![Screenshot (144)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/8b8cb656-1a77-4694-b2d3-4b8c25356c84)
 
+
+ To prevent voltage droop or ground bounce instead of single vdd / vss line we will have multiple such lines called power mesh thus avoiding this conditions.
+
+ ![Screenshot (147)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/caa77125-56c5-482d-9f9a-ae2006197546)
+
+
   
 
   
