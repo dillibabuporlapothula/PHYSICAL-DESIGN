@@ -135,6 +135,24 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
 - Aspect ratio signifies the shape of the chip.
 
+  ### Preplaced cells
+
+  When we have huge logic gates, we can divide it into sub-modules or IP's which can be reused multiple times.These are placed once in a chip in user-defined locations before automated placement & routing happens. After this remaining cells are placed around them without disturbing these blocks.
+
+  ![Screenshot (139)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/1a24d699-070a-4fd9-bffe-1db7e133cce8)
+
+
+  In the real world scenario while the circuit is switching i.e, charging or discharging their is voltage drop that we can encounter, which may interfere with output. To overcome this issue we add __decoupling capacitance (Cd)__ across the circuits to reduce this drop get the correct output.
+
+  
+   ![Screenshot (144)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/8b8cb656-1a77-4694-b2d3-4b8c25356c84)
+
+  
+
+  
+
+  
+
  
 
 </details>
