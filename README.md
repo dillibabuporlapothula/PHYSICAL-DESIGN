@@ -123,15 +123,15 @@ From the report we can calculate __flops ratio__ = 64/301 = 0.212 = 21.2 %
 
 To identify the dimensions of chip like width,height,die,core we need to first find out dimensions of standard cells and filpflops.Then we calculate the total area occupied by netlist on silicon wafer.
 
-                     Area occupied by netlist
-Utilization factor = ________________________
-                      total area of core
+                     
+  Utilization factor =  Area occupied by netlist /  total area of core
+  
 
 - Utilization factor 1 means 100% core is occupied.
 
-                      Height
-  Aspect ratio  = -----------------    
-                      width
+                      
+  Aspect ratio  = Height / Width
+  
 
 - Aspect ratio signifies the shape of the chip.
 
