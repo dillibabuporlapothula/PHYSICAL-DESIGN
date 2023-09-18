@@ -118,6 +118,9 @@ From the report we can calculate __flops ratio__ = 64/301 = 0.212 = 21.2 %
 
 <details>
 <summary>Day 2 </summary>
+
+# Chip floor planning considerations
+
  
 
 </details>
