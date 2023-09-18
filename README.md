@@ -148,12 +148,12 @@ To identify the dimensions of chip like width,height,die,core we need to first f
    ![Screenshot (144)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/8b8cb656-1a77-4694-b2d3-4b8c25356c84)
 
 
- To prevent voltage droop or ground bounce instead of single vdd / vss line we will have multiple such lines called power mesh thus avoiding this conditions.
-
- ![Screenshot (147)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/caa77125-56c5-482d-9f9a-ae2006197546)
-
-
+  To prevent voltage droop or ground bounce instead of single vdd / vss line we will have multiple such lines called power mesh thus avoiding this conditions.
+ 
+  The pins are placed between die and core area and clock pins are wider since they have to continously drive all the cells. with logical cell placement blockage the automatic placement tool will not place any cells in this area and floor plan is ready for placement and routing step.
   
+
+  ![Screenshot (148)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/457edce0-cd0e-4144-9824-20a336cb934f)
 
   
 
