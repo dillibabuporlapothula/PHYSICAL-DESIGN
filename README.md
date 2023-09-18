@@ -121,7 +121,7 @@ From the report we can calculate __flops ratio__ = 64/301 = 0.212 = 21.2 %
 
 # Chip floor planning considerations
 
-To identify the dimensions of chip like width,height,die,core we need to first find out dimensions of standard cells and filpflops.Then we calculate the total area occupied by netlist on silicon wafer
+To identify the dimensions of chip like width,height,die,core we need to first find out dimensions of standard cells and filpflops.Then we calculate the total area occupied by netlist on silicon wafer.
 
                      Area occupied by netlist
 Utilization factor = ------------------------
