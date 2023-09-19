@@ -247,10 +247,9 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   after copying the tech file to vsdstdcelldesign path execute below command to view the magic file of inverter.
 
-    ```
-      magic -T sky130A.tech sky130_inv.mag &   
-    ```
+    ```  magic -T sky130A.tech sky130_inv.mag &   ```
 
+      
       ![VirtualBox_ubuntu-VLSI_20_09_2023_03_09_11](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/4d986b77-2f34-4a41-ab15-6cd6579a01df)
 
 
