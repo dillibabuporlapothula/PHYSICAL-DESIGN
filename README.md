@@ -177,7 +177,6 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   ![VirtualBox_ubuntu-VLSI_19_09_2023_16_21_47](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/e9e70d54-150e-4455-af3d-670dde727a1c)
 
-  
 
 
   __placement__:
@@ -195,7 +194,24 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   we can see from placement image that all the standard cells are placed.
 
-  
+  ### cell design flow
+
+  Below are the three important steps involved in cell design flow
+
+   ![Screenshot (157)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/24fbe401-3561-43f1-ae4f-32bd1ae36727)
+
+  ### Timing Characterization
+
+  Timing threshold definitions
+
+   ![Screenshot (159)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/1da9713a-5ae0-4fc8-9f99-36addbd9ea7d)
+
+  propagation delay definitions
+
+   ![Screenshot (160)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/9427b034-793f-4686-b63d-7bf22fb72d8e)
+
+
+
 
   
 
