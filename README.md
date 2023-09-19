@@ -155,6 +155,35 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   ![Screenshot (148)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/457edce0-cd0e-4144-9824-20a336cb934f)
 
+
+  ### Steps to run floorplan and placement using OpenLane
+
+  __floor plan__:
+
+  use the below command to run floorplan in openalane after completion of sythesis step and setting or modifying the required configs or switches values.
+
+  ``` run_floorplan ```
+
+
+  ![VirtualBox_ubuntu-VLSI_19_09_2023_15_16_07](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/ef8598f2-a313-458f-9f87-c8e1f104ac97)
+
+  To view the floorplan in magic use below commands
+  
+  ```
+  cd /home/dilli/OpenLane/designs/picorv32a/runs/RUN_2023.09.19_10.43.26/results/floorplan
+  magic -T home/dilli/.volare/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read picorv32.def
+  
+  ```
+
+  ![Uploading VirtualBox_ubuntu-VLSI_19_09_2023_16_21_47.png…]()
+
+
+  __placement__:
+
+  use the below command to run placement in openalane after completion of floorplan step and setting or modifying the required configs or switches values.
+
+  ``` run_placement ```
+
   
 
   
