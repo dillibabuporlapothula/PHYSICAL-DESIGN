@@ -236,7 +236,8 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   Below diagram shows transfer characteristics diagram of inverter in ngspice. we can clearly see that output is transitioning from one to zero when input is high. And the curve shifts left or right   based on the width and length of the pmos and nmos.
 
-    ![Screenshot (163)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/f53375a2-ba88-4544-ba8d-499dc3b63a47)
+   ![Screenshot (163)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/a6575431-f5a3-43c5-9386-e70847f795c0)
+
 
  ### steps to git clone vsdstdcelldesign repo
 
@@ -249,8 +250,10 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
     ```  magic -T sky130A.tech sky130_inv.mag &   ```
 
+
       
-      ![VirtualBox_ubuntu-VLSI_20_09_2023_03_09_11](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/4d986b77-2f34-4a41-ab15-6cd6579a01df)
+   ![VirtualBox_ubuntu-VLSI_20_09_2023_03_09_11](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/19eb4573-6628-4eee-96fe-bede5fc7a043)
+
 
 
  
