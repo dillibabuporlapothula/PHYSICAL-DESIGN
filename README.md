@@ -175,7 +175,9 @@ To identify the dimensions of chip like width,height,die,core we need to first f
   
   ```
 
-  ![Uploading VirtualBox_ubuntu-VLSI_19_09_2023_16_21_47.png…]()
+  ![VirtualBox_ubuntu-VLSI_19_09_2023_16_21_47](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/e9e70d54-150e-4455-af3d-670dde727a1c)
+
+  
 
 
   __placement__:
