@@ -222,6 +222,46 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 <details>
 <summary>Day 3 </summary>
 
+# Design library cell using magic and ngspice characterization
+
+ ### CMOS inverter and ngspice simulations 
+
+  CMOS inverter diagram
+ 
+   ![Screenshot (161)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/282c80a5-6e3b-4766-a4a2-ba6c9be57659)
+
+  CMOS inverter with various nodes specified.
+
+   ![Screenshot (162)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/6dbe77a1-3a2a-4e3b-a509-0fb272a209ab)
+
+  Below diagram shows transfer characteristics diagram of inverter in ngspice. we can clearly see that output is transitioning from one to zero when input is high. And the curve shifts left or right   based on the width and length of the pmos and nmos.
+
+    ![Screenshot (163)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/f53375a2-ba88-4544-ba8d-499dc3b63a47)
+
+ ### steps to git clone vsdstdcelldesign repo
+
+  clone the repo using below command inside openlane folder.
+
+   ``` git clone https://github.com/nickson-jose/vsdstdcelldesign.git ```
+   
+
+  after copying the tech file to vsdstdcelldesign path execute below command to view the magic file of inverter.
+
+    ```
+      magic -T sky130A.tech sky130_inv.mag &   
+    ```
+
+      ![VirtualBox_ubuntu-VLSI_20_09_2023_03_09_11](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/4d986b77-2f34-4a41-ab15-6cd6579a01df)
+
+
+ 
+
+
+
+
+
+
+
 </details>
 
 <details>
