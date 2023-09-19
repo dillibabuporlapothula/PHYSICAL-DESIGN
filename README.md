@@ -182,9 +182,18 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   __placement__:
 
-  use the below command to run placement in openalane after completion of floorplan step and setting or modifying the required configs or switches values.
+  In case of placement we take the physical view of netlist and place them on floorplan with out disturbing the pre-placed cells.we use repeaters if the connections are very long as part of placement optimisation. If the wire connections are overlapping we use different layers.The placement itself is divided into global placement and detailed placement.
+
+  use the below command to run placement(by default openlane will do global placement reducing wire length as objective HPWL) in openalane after completion of floorplan step and setting or modifying the required configs or switches values.
 
   ``` run_placement ```
+
+  ![VirtualBox_ubuntu-VLSI_19_09_2023_19_13_29](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/1e73fd4a-ab4b-4827-bf43-37118bfe6ddb)
+
+  ![VirtualBox_ubuntu-VLSI_19_09_2023_19_20_20](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/dfaab2e0-906c-4bd4-8170-3b0f003394af)
+
+
+  we can see from placement image that all the standard cells are placed.
 
   
 
