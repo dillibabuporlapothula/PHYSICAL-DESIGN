@@ -255,6 +255,37 @@ To identify the dimensions of chip like width,height,die,core we need to first f
    ![VirtualBox_ubuntu-VLSI_20_09_2023_03_09_11](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/19eb4573-6628-4eee-96fe-bede5fc7a043)
 
 
+  # Inception of layout and CMOS fabrication
+
+   ## 16 mask CMOS process
+   
+   The 16-mask CMOS (Complementary Metal-Oxide-Semiconductor) fabrication process involves the following steps
+
+
+   __Substrate Preparation:__ Start with a silicon wafer substrate, typically p-type. Clean it to remove impurities.
+
+   __N-Well Formation (Mask 1):__ Apply a photomask and perform a diffusion process to create n-wells for NMOS transistors.
+
+   __P-Well Formation (Mask 2):__ Apply another photomask and perform a diffusion process to create p-wells for PMOS transistors.
+
+   __Gate Oxide Growth (Mask 3):__  Grow a thin gate oxide layer for both types of transistors.
+
+   __Gate Formation (Mask 4):__ Deposit and pattern polysilicon to form transistor gates.
+
+   __Source/Drain Implantation (Mask 5 and Mask 6):__ Use masks to implant dopants into the substrate to create source and drain regions for NMOS and PMOS transistors separately.
+
+   __Interconnect Layers (Mask 7 and Mask 8):__ Apply masks to deposit and pattern metal layers for interconnections between transistors.
+
+   __Passivation Layer (Mask 9 to Mask 16):__ Apply masks to deposit and pattern passivation layers for protection and insulation.
+
+   These 8 steps, involving 16 masks in total, create the essential components of a CMOS integrated circuit, enabling the fabrication of both NMOS and PMOS transistors and the necessary         interconnections for the desired functionality.
+
+        
+     
+   ![Screenshot (168)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/bc0dbe9d-323c-4432-b074-0627f8cca180)
+
+
+
 
  
 
