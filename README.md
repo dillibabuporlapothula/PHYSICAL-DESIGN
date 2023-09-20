@@ -298,8 +298,33 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
   The contents of extracted spice file is shown below:
 
+   ![VirtualBox_ubuntu-VLSI_20_09_2023_15_10_01](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/dbf01fda-bc57-473e-8f25-c74bb813f990)
 
-  ![VirtualBox_ubuntu-VLSI_20_09_2023_14_58_01](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/48db76e2-9c28-4a19-8a9e-4d68676f3559)
+   To plot the graph using ngspice for the above spice file use below command
+
+    ``` 
+    ngspice <spice file name>
+    plot y vs time a
+    ```
+
+    ![VirtualBox_ubuntu-VLSI_20_09_2023_15_12_03](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/0cb2c8db-cec4-49f5-9659-d17e24e163c4)
+
+   #### Four timing parameters for the characterization of an inverter standard cell
+
+   __Rise Transition Time (t_r):__ The time taken for the output signal to transition from 20% to 80% of its maximum value when the input signal changes.
+        t_r = (Time at 80% output - Time at 20% output)
+   
+   __Fall Transition Time (t_f):__ The time taken for the output signal to transition from 80% to 20% of its maximum value when the input signal changes.
+        t_f = (Time at 20% output - Time at 80% output)
+
+   __Cell Rise Delay (t_d_rise):__ The difference in time between when the output signal reaches 50% (midpoint) during a rising input transition and when the input signal starts to fall.
+       t_d_rise = (Time at 50% output rise - Time at 50% input fall)
+
+   __Cell Fall Delay (t_d_fall):__ The difference in time between when the output signal reaches 50% (midpoint) during a falling input transition and when the input signal starts to rise.
+       t_d_fall = (Time at 50% output fall - Time at 50% input rise)
+  
+   These timing parameters are crucial for understanding the behavior of an inverter cell in digital circuits and are used for characterizing its performance in terms of signal propagation and timing constraints.
+
 
 
 
