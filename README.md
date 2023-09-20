@@ -410,6 +410,16 @@ run_synthesis
 
 ```
 
+####  from below we can see that our inverter has been incorporated to openlane flow
+
+
+ ![Screenshot (178)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/7d9db414-7922-481e-9f1e-877f7638d3db)
+
+ 
+
+
+
+
 ## Delay tables
 
 __Parameter Influence__
