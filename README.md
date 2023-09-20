@@ -345,11 +345,89 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
 ## steps to convert grid info to track info
 
-execute below command in magic terimal window and we can see the grids apperaring as per specified values. And also we can confirm that the ports are at intersections of these horizontal and veritcal grid lines.
+execute below command in magic terimal window and we can see the grids apperaring as per specified values. And also we can confirm that the ports are at intersections of these horizontal and veritcal grid lines. And also width of standard cell should be in odd multiples of x & height of standard cell should be multiples of y.
 
 ``` grid 0.46um 0.34um 0.23um 0.17um ```
 
  ![VirtualBox_ubuntu-VLSI_20_09_2023_17_38_45](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/4d5922ae-3f8a-460c-a587-4357d65f1eaf)
+
+## Creating Port Definitions
+
+ Once the layout is prepared, the subsequent step involves generating a LEF (Library Exchange Format) file for the cell. However, it's essential to establish specific properties and descriptions for the cell's pins to assist the placer and router tool. In the context of LEF files, a cell containing ports is defined as a macro cell, where the ports represent the declared PINs of the macro.
+
+Our goal is to extract a LEF file from a given layout, such as a simple CMOS inverter, adhering to the standard format. The initial step involves defining the ports and correctly assigning class and use attributes to each port. The most straightforward method for defining a port is through the Magic Layout window. The following steps outline this process:
+
+1) In the Magic Layout window, load the .mag file for the design (in this case, the inverter).
+
+2) Navigate to 'Edit' >> 'Text,' which opens a dialogue box.
+
+3) Continue with the same number of lines.
+
+ ![VirtualBox_ubuntu-VLSI_20_09_2023_18_20_19](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/5acbd791-5bb7-4412-82b4-0f5809a9b99a)
+
+ To create a lef file use below command and this will create lef file the contents of which can be seen below
+
+ ``` lef write ```
+
+  ![VirtualBox_ubuntu-VLSI_20_09_2023_18_26_31](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/eae22c31-219a-49b9-b6b9-37af50fd5c06)
+
+
+## Steps to Incorporate a Custom Cell into ASIC Design
+
+In the previous steps, we've created a custom standard cell for an inverter. Now, to include this custom cell in the ASIC design, follow these steps:
+
+1) Copy the LEF file and the library files, namely sky130_fd_sc_hd_typical.lib, sky130_fd_sc_hd_slow.lib, and sky130_fd_sc_hd_fast.lib, from the 'libs' folder in 'vsdstdcelldesign' to the 'src' folder of 'picorv32a.'
+
+2) Modify the 'config.tcl' file as shown below:
+
+```
+   # Design
+set ::env(DESIGN_NAME) "picorv32a"
+set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/src/picorv32a.v"
+set ::env(CLOCK_PORT) "clk"
+set ::env(CLOCK_NET) $::env(CLOCK_PORT)
+set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) {1}
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+
+set filename $::env(DESIGN_DIR)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
+if { [file exists $filename] == 1} {
+    source $filename
+}
+
+```
+
+execute below commands
+
+```
+prep -design picorv32a -tag RUN_2023.09.09_20.37.18 -overwrite 
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+run_synthesis
+
+```
+
+## Delay tables
+
+__Parameter Influence__
+
+In VLSI design, the parameter "Delay" holds significant sway over cell behavior, dictating critical timing considerations. A "delay model table" or "timing table" is crafted when working with cells of varying sizes and threshold voltages. This table acts as a key instrument, capturing the intricate interplay between a cell's delay, input transitions, and output loads.
+
+__Wire Length Dynamics__
+
+Imagine two scenarios: one with a cell (let's call it X1) at the end of a long wire, and another with the same cell positioned at the termination of a shorter wire. In the former, the extended wire introduces resistance and capacitance, leading to substantial delay and slower transitions. Conversely, the latter scenario, with a shorter wire, results in lower delay, showcasing the wire's profound impact on signal transitions. Despite using the same cell, input transitions distinctly alter the delay, highlighting wire length's significance.
+
+__Delay Tables and Algorithmic Precision__
+
+VLSI engineers have established stringent buffer insertion rules to maintain signal integrity. Buffer sizes remain consistent, but individual delays can vary based on the load they drive, leading to the concept of "delay tables." These two-dimensional arrays contain precise values for input slew and load capacitance, linked to various buffer sizes, serving as comprehensive timing models.
+
+ ![Screenshot (169)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/a5c84d49-e222-43a4-8853-fd9a71c56973)
+
+
+
 
 
 
