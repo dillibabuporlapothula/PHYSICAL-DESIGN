@@ -473,7 +473,10 @@ __Algorithm Considerations__
 
 Despite its utility, the Lee algorithm has limitations, particularly when dealing with a large number of pins. Constructing a maze and numbering cells from source to target can be time-consuming when dealing with millions of pins. Alternative algorithms exist to address similar routing challenges efficiently.
 
-  ![Screenshot (174)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/7af3cd9a-0a31-4e71-bb61-ca08bbdb8f4d)
+
+  ![Screenshot (177)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/fcd2a47f-d36b-4ea6-a634-9c1397d1da75)
+
+
 
 ### Design rule checks
 
