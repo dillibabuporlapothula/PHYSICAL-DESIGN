@@ -340,6 +340,19 @@ To identify the dimensions of chip like width,height,die,core we need to first f
 
 <details>
 <summary>Day 4 </summary>
+
+# Pre layout timing modelling and clock tree analysis
+
+## steps to convert grid info to track info
+
+execute below command in magic terimal window and we can see the grids apperaring as per specified values. And also we can confirm that the ports are at intersections of these horizontal and veritcal grid lines.
+
+``` grid 0.46um 0.34um 0.23um 0.17um ```
+
+ ![VirtualBox_ubuntu-VLSI_20_09_2023_17_38_45](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/4d5922ae-3f8a-460c-a587-4357d65f1eaf)
+
+
+
  
 
 </details>
