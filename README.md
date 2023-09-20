@@ -434,7 +434,8 @@ __Timing Constraints__
 In the domain of VLSI design, the parameters of "Setup Time" and "Hold Time" wield significant influence. "Setup Time" signifies the duration preceding the active clock edge during which data input must remain stable to ensure accurate latching. Disregarding this requirement can lead to setup violations, risking data integrity. Conversely, "Hold Time" sets the minimum interval after the clock's active edge during which data input must remain unchanged. Violating this leads to hold violations, potentially causing erroneous data capture. Both are measured concerning the clock's active edge and form the foundation of reliable digital circuit operation.
 
 
-  ![Screenshot (170)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/6183d023-7d42-4e52-ab91-893a8034212b)
+  ![Screenshot (172)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/48fff999-7a07-40e4-8afa-6fab84c4ae79)
+
 
 __Clock Jitter Causes__
 
@@ -443,6 +444,7 @@ Clock jitter, defined as the deviation of a clock edge from its ideal position, 
 __Clock Tree Synthesis (CTS) Importance__
 
 Clock Tree Synthesis is vital for efficient clock signal distribution in digital ICs, minimizing clock skew, reducing the need for clock repeaters, and meeting timing and power specifications. CTS ensures reasonable clock skew, controlled clock latency, transition times, pulse width, duty cycle adherence, and power limits. Clock skew refers to differences in clock arrival times between registers. Proper synchronization through CTS prevents setup and hold time violations, crucial for data processing in complex ICs with millions or billions of transistors. Crosstalk, an interference issue, can be mitigated with spacing, wire sizing, shielding, buffering, and clock gating techniques.
+
 
   ![Screenshot (171)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/fc5169c6-bdd0-45a3-8448-582ec8b3473f)
 
