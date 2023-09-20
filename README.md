@@ -460,6 +460,42 @@ Clock Tree Synthesis is vital for efficient clock signal distribution in digital
 
 <details>
 <summary>Day 5 </summary>
+
+# Final steps for RTL2GSD flow
+
+### Maze routing and Lee's algorithm
+
+One approach to routing, known as the Maze Routing algorithm, employs techniques like the Lee algorithm. This method uses a grid, similar to the one used in cell customization, for routing purposes. The Lee algorithm initiates with source and target points, utilizing the routing grid to discover the shortest or optimal route between them.
+
+The algorithm labels neighboring grid cells around the source, incrementing from 1 until reaching the target (e.g., from 1 to 7). During this process, various paths emerge, including L-shaped and zigzag routes. The Lee algorithm prioritizes selecting the best path, typically favoring L-shaped routes over zigzags. When no L-shaped paths are available, it may resort to zigzag routes. This approach is particularly useful for global routing tasks.
+
+__Algorithm Considerations__
+
+Despite its utility, the Lee algorithm has limitations, particularly when dealing with a large number of pins. Constructing a maze and numbering cells from source to target can be time-consuming when dealing with millions of pins. Alternative algorithms exist to address similar routing challenges efficiently.
+
+  ![Screenshot (174)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/7af3cd9a-0a31-4e71-bb61-ca08bbdb8f4d)
+
+### Design rule checks
+
+__Spacing, Width, and Alignment Rules:__ These checks confirm adequate spacing between features, minimum width for conductive traces, and proper alignment between different layers to prevent short circuits, defects, and misalignment.
+
+__Enclosure and Notch Rules:__ DRC tools also validate that components are suitably enclosed within specified regions and that features requiring notches or cutouts adhere to the design requirements.
+
+__Via Rules:__ Verification of via size and placement, which facilitate connections between different layers within the IC, is an integral part of DRC checks.
+
+__Antenna Rules:__ DRC tools examine the buildup and discharge of charge during fabrication to ensure they remain within acceptable thresholds. This ensures the manufacturing process remains reliable and within expected limits.
+ 
+ 
+ ![Screenshot (176)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/63b8f149-2a53-4f1a-9dda-fac0eab1900a)
+
+
+
+ # Power Distribution Network generation
+ 
+
+
+
+
  
 
 </details>
