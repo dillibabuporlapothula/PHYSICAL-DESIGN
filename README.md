@@ -548,7 +548,8 @@ Running routing step in TritonRoute as part of openLANE flow:
  # custom made sky130_vsdinv
 
 
-  ![Uploading Screenshot (178).png…]()
+ ![Screenshot (178)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/04a095ea-7768-4bfb-b591-fa84ebaac54a)
+
 
  
 
