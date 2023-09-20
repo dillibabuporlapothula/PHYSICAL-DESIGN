@@ -284,6 +284,22 @@ To identify the dimensions of chip like width,height,die,core we need to first f
      
    ![Screenshot (168)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/bc0dbe9d-323c-4432-b074-0627f8cca180)
 
+   __To extract the spice netlist from magic use below commands__
+
+
+   ```
+   extract all
+   ext2spice cthresh 0 rthresh 0
+   ext2spice
+   ```
+
+  ![VirtualBox_ubuntu-VLSI_20_09_2023_14_56_51](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/7182bb18-3ab3-41ef-92e8-1da38faf6c29)
+
+
+  The contents of extracted spice file is shown below:
+
+
+  ![VirtualBox_ubuntu-VLSI_20_09_2023_14_58_01](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/48db76e2-9c28-4a19-8a9e-4d68676f3559)
 
 
 
