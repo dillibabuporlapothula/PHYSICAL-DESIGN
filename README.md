@@ -427,6 +427,27 @@ VLSI engineers have established stringent buffer insertion rules to maintain sig
  ![Screenshot (169)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/a5c84d49-e222-43a4-8853-fd9a71c56973)
 
 
+ # STATIC TIMING ANALYSIS
+
+__Timing Constraints__
+
+In the domain of VLSI design, the parameters of "Setup Time" and "Hold Time" wield significant influence. "Setup Time" signifies the duration preceding the active clock edge during which data input must remain stable to ensure accurate latching. Disregarding this requirement can lead to setup violations, risking data integrity. Conversely, "Hold Time" sets the minimum interval after the clock's active edge during which data input must remain unchanged. Violating this leads to hold violations, potentially causing erroneous data capture. Both are measured concerning the clock's active edge and form the foundation of reliable digital circuit operation.
+
+
+  ![Screenshot (170)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/6183d023-7d42-4e52-ab91-893a8034212b)
+
+__Clock Jitter Causes__
+
+Clock jitter, defined as the deviation of a clock edge from its ideal position, results from various factors such as noise, component variations, temperature fluctuations, phase-locked loops (PLLs), and clock distribution issues. Noise from power supply fluctuations and electromagnetic interference, as well as variations in electronic component characteristics, can introduce jitter. Temperature changes affect component performance, while PLLs may introduce jitter if not configured correctly. Clock signals traveling through traces or cables can also experience delays and reflections, contributing to jitter.
+
+__Clock Tree Synthesis (CTS) Importance__
+
+Clock Tree Synthesis is vital for efficient clock signal distribution in digital ICs, minimizing clock skew, reducing the need for clock repeaters, and meeting timing and power specifications. CTS ensures reasonable clock skew, controlled clock latency, transition times, pulse width, duty cycle adherence, and power limits. Clock skew refers to differences in clock arrival times between registers. Proper synchronization through CTS prevents setup and hold time violations, crucial for data processing in complex ICs with millions or billions of transistors. Crosstalk, an interference issue, can be mitigated with spacing, wire sizing, shielding, buffering, and clock gating techniques.
+
+  ![Screenshot (171)](https://github.com/dillibabuporlapothula/PHYSICAL-DESIGN/assets/141803312/fc5169c6-bdd0-45a3-8448-582ec8b3473f)
+
+
+
 
 
 
