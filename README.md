@@ -552,8 +552,8 @@ Running routing step in TritonRoute as part of openLANE flow:
 
 # References
 
-https://github.com/The-OpenROAD-Project/OpenLane 
-https://github.com/nickson-jose/vsdstdcelldesign
-https://github.com/kunalg123
+- https://github.com/The-OpenROAD-Project/OpenLane 
+- https://github.com/nickson-jose/vsdstdcelldesign
+- https://github.com/kunalg123
 
 
